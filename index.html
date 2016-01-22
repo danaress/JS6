@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="module">
+<head>
+	<title>JS6</title>
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+</head>
+
+<body ng-controller="modcontroller">
+
+	<div>
+		<img class="profilePicture" src="/Users/student/projects/JavaScript/JS6/KimJongAccomplisedAngler-1.jpg">
+	</div>
+
+	<div>
+		<button class="showButton" ng-click="showButton()" ng-hide="showTheButton">Edit Info</button>
+	</div>
+
+	<div>
+		<button class="hideButton" ng-click="hideButton()" ng-show="hideTheButton">Close</button>
+	</div>
+
+	<div ng-show="hideForm" class="form">
+		<form ng-submit="profileForm">
+			<input type="text" placeholder="User Name" ng-model="newcontent[0]"></input>
+			<input type="text" placeholder="Bio" ng-model="newcontent[1]"></input>
+			<input type="text" placeholder="Favorite Book" ng-model="newcontent[2]"></input>
+			<input type="text" placeholder="Favorie JavaScript Library" ng-model="newcontent[3]"></input>
+			<input ng-click="submitInfo()" class="submit-button" type="submit"></input>
+		</form>
+	</div>
+
+	<div class="profileInformation">
+		<h3>{{content[0]}}</h3>
+		<p>{{content[1]}}</p>
+		<p>Favorite Books</p>
+		<ul>
+			<li>{{content[2]}}</li>
+		</ul>
+		<p>{{content[3]}}</p>
+	</div>
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

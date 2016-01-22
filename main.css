@@ -1,0 +1,63 @@
+body {
+	background-color: #FDE3A7;
+	font-size: 16px;
+}
+
+.profilePicture {
+
+	height: 200px;
+	width: auto;
+	margin: 30px;
+	border: 15px solid #F9BF3B;
+	border-radius: 10px;
+}
+
+.showButton {
+	height: 40px;
+	width: auto;
+	margin: 15px;
+	border-radius: 3px;
+	border: 3px solid #D87400;
+}
+
+.hideButton {
+	height: 40px;
+	width: auto;
+	margin: 15px;
+	border-radius: 3px;
+	border: 3px solid #D87400;
+}
+
+
+
+.form {
+	background-color: #F39C12;
+	border: 3px solid #D87400;
+	height: 200px;
+	width: 50%;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+input{
+	display: block;
+	margin-top: 10px;
+	margin-left: 5px;
+	height: 15px;
+	border: purple 2px solid;
+}
+
+form .submit-button {
+	height: 20px;
+	margin-top: 15px;
+	border-radius: 3px;
+}
+
+.profileInformation {
+
+	background-color: #F39C12;
+	border: 3px solid #D87400;
+	height: 200px;
+	width: 50%;
+	border-radius: 3px;
+}
